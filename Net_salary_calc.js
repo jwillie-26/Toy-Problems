@@ -1,5 +1,15 @@
 //Net salary calculator
 
+/*
+    Calculates and displays all deductables and thus the net salarryw for an employee
+    
+    Gross salary = all_benefits + basic salary e.g house_allowance + hardship_allowance + risk_allowance + basic_salary
+    taxable income = Gross pay
+    deductions = (payee + NHIF + NSSF)
+    Earnable pay = Gross pay - deductions e.g Gross salary - (payee + NHIF + NSSF) ==> net salary
+    
+*/
+
 //enter basic salary
 
 function salary(basicSalary, benefits) {
