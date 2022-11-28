@@ -1,4 +1,14 @@
 //Speed detector
+
+/*
+    
+    Speed is input an integer
+    the input is enumearated as follows:
+    Speed < 70; print OK!
+    Speed < 70, deduct 1 point for every 5 km and print total number of demerit point
+    suspend licence on more than 12 point
+*/
+
 const checkspeed = () => {
 
   let speed = document.getElementById('speed') .value;
