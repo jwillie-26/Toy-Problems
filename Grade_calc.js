@@ -1,4 +1,13 @@
 //Student Grade Generator
+
+/*
+    Grade student marks as input by a user 
+    
+    A user inputs marks as an integer, a value btn 0-100
+    the input should be graded as follows:
+    A ==>79 B ==>60 C ==>49 D ==>40 E ==>39
+*/
+
 //Used arrow function 
 
 const checkGrade = () => {
