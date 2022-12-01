@@ -8,31 +8,28 @@
     A ==>79 B ==>60 C ==>49 D ==>40 E ==>39
 */
 
-//Used arrow function 
-
-const checkGrade = () => {
-
-   let sbl = document.getElementById('mark').Value;
-
-//used if statement to get each grade.
-if (sbl >= 80 && sbl <= 100){
-   document.getElementById("answer") .innerHTML = "Grade:A";
+function rangeChecker(x,min,max){
+       return x >= min && x <= max;
 }
-    else if (sbl >= 60 && sbl <= 79) {
-      document.getElementById("answer") .innerHTML = "Grade:B";
+
+function gradeGenerator(marks){
+    //validate if entry falls within range
+    if(rangeChecker(marks,0,100)){
+     //print out marks grades
+     if(marks > 79){
+        console.log("A");
+    } else if(rangeCheker(marks,60,79)){
+      console.log("B");
+    } else if(rangeChecher(marks,50,59)){
+      console.log("C");
+    } else if(rangeChecker(marks,40,49)){
+      console.log("D");
+    } else {
+        console.log("E");
     }
-    else if (sbl >= 50 && sbl <= 59) {
-        document.getElementById("answer") .innerHTML = "Grade:C";
-      }
-      else if (sbl >= 40 && sbl <= 49) {
-        document.getElementById("answer") .innerHTML = "Grade:D";
-      }
-      else if (sbl >= 1 && sbl <= 39) {
-        document.getElementById("answer") .innerHTML = "Grade:E";
-      } 
-      else if (sbl  >= 100) {
-        document.getElementById("answer") .innerHTML = "Invalid mark";
-      }
-
-}
+ }
+        
+for (var i=0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+        var avg = (Avgmarks/students.length);
 
