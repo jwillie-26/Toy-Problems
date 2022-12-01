@@ -8,24 +8,26 @@
     Speed < 70, deduct 1 point for every 5 km and print total number of demerit point
     suspend licence on more than 12 point
 */
+Let demeritPoints = 0;
+Let speedTracker = 0;
 
-const checkspeed = () => {
 
-  let speed = document.getElementById('speed') .value;
-
-  if(speed >= 1 && speed <= 70) {
-    document.getElementById("answer").innerHTML = "Your speed is OK";
-  }
-
-  else if (speed >= 70) {
-    if (points >= 12) {
-      document.getElementById("answer").innerHTML = "You exided 12 points : License suspended";
-
+function speedDetector(speed){
+    
+    //validate
+    if(speed < 70){
+        console.log("Speed is OK");
+    } else {
+        //speed-speed Limit , will give us excess the function will suspend license
+        Let newspeedPoints = (speed - 70)/5;
+        if(newspeedPoints <= 12 ) {
+            console.log("Demerit points " + newspeedPoints);
+        } else {
+            console.log("License Suspended")
+        }
     }
-    else {
-      document.getElementById("answer").innerHTML = points + "points";
+    return speed
+    
+}  
 
-      
-    }
-  }
-}
+console.log(speedDetector(80));
