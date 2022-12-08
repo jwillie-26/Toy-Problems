@@ -28,8 +28,6 @@ function gradeGenerator(marks){
         console.log("E");
     }
  }
-        
-for (var i=0; i < students.length; i++) {
-        Avgmarks += students[i][1];
-        var avg = (Avgmarks/students.length);
+}        
+
 
