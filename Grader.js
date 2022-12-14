@@ -11,6 +11,8 @@
 function marksChecker(x, min, max) {
   return x >= min && x <= max;
 }
+
+    //assign marks a value.
 function marksGenerator(marks) {
 
   if (marksChecker(marks, 0, 100)) {
